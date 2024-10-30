@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Kumbh_Sans } from 'next/font/google';
+import Header from '@/components/Header';
 import './globals.css';
 
 const kumbhSans = Kumbh_Sans({
@@ -21,7 +22,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${kumbhSans.variable} font-sans`}>{children}</body>
+			<body className={`${kumbhSans.variable} font-sans`}>
+				<Header />
+				{children}
+			</body>
 		</html>
 	);
 }
