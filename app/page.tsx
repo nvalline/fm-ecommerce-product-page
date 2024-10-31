@@ -1,7 +1,15 @@
+import MobileImageSlider from '@/components/MobileImageSlider';
+
 export default function Home() {
 	return (
 		<main>
-			<h1 className='font-sans text-shade-black'>home</h1>
+			<section className='mx-auto max-w-[375px]'>
+				<div>
+					<MobileImageSlider />
+				</div>
+				<div>Description</div>
+				Form
+			</section>
 		</main>
 	);
 }
