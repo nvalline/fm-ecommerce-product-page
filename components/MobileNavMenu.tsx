@@ -1,26 +1,10 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { navLinks } from '@/constants';
 
-const MobileNavOverlay = ({
-	showNavMenu,
-	setShowNavMenu
-}: MobileNavMenuProps) => {
+const MobileNavOverlay = () => {
 	return (
-		<div
-			className={`${
-				!showNavMenu && 'hidden'
-			} absolute h-[100vh] inset-y-0 left-0 w-[66.67%] p-6 flex flex-col gap-[54px] bg-white z-10 md:hidden`}
-		>
-			<Image
-				src={'/images/icon-close.svg'}
-				alt='close'
-				height={14}
-				width={14}
-				className='cursor-pointer'
-				onClick={() => setShowNavMenu(false)}
-			/>
-			<ul className='flex flex-col gap-5'>
+		<div className='h-full pt-[5.75rem] pl-6'>
+			<ul className={`flex flex-col gap-5`}>
 				{navLinks.map((link) => (
 					<li key={link.label} className='cursor-pointer'>
 						<Link href={link.href}>
