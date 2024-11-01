@@ -8,6 +8,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			boxShadow: {
+				button: '0 20px 50px -20px hsl(26, 100%, 55%)'
+			},
 			colors: {
 				primary: {
 					orange: 'hsl(26, 100%, 55%)',

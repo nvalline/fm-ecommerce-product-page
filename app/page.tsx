@@ -1,9 +1,10 @@
+import Form from '@/components/Form';
 import MobileImageSlider from '@/components/MobileImageSlider';
 
 export default function Home() {
 	return (
 		<main>
-			<section className='mx-auto max-w-[375px]'>
+			<section className='mx-auto max-w-[375px] pb-[88px]'>
 				<div>
 					<MobileImageSlider />
 				</div>
@@ -36,7 +37,7 @@ export default function Home() {
 						</p>
 					</div>
 				</div>
-				Form
+				<Form />
 			</section>
 		</main>
 	);
